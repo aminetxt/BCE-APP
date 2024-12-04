@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Data Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Economic Dashboard</a>
+            <div>
+                <a href="#" class="text-gray-300 hover:text-white px-4">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white px-4">Exchange Rates</a>
+                <a href="#" class="text-gray-300 hover:text-white px-4">Global Data</a>
+                <a href="#" class="text-gray-300 hover:text-white px-4">Comparisons</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Exchange Rates</h2>
+                <div id="exchange-rates" class="h-64"></div>
+                <button id="refresh" class="bg-gray-700 text-white px-4 py-2 mt-4">Access</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Global Economic Data</h2>
+                <div id="global-data" class="h-64"></div>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg mt-8">
+            <h2 class="text-2xl font-bold mb-4">Comparisons</h2>
+            <div id="comparisons" class="h-96"></div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
